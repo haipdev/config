@@ -1,6 +1,12 @@
 # haip.config
 
+[![License](https://img.shields.io/github/license/haipdev/config.svg)](LICENSE)
 [![Build Status](https://travis-ci.org/haipdev/config.svg?branch=master)](https://travis-ci.org/haipdev/config)
+[![Coverage Status](https://coveralls.io/repos/github/haipdev/config/badge.svg?branch=master)](https://coveralls.io/github/haipdev/config?branch=master)
+[![Updates](https://pyup.io/repos/github/haipdev/config/shield.svg)](https://pyup.io/repos/github/haipdev/config/)
+[![pypi](https://img.shields.io/pypi/v/haip_config.svg)](https://pypi.org/project/haip-config)
+
+
 
 haip.config is a simple configuration handling module for Python 3.6+. You define your project configuration in yaml-files and haip.config handles the rest for you.
 
