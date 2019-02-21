@@ -1,5 +1,7 @@
 # haip.config
 
+[![Build Status](https://travis-ci.org/haipdev/config.svg?branch=master)](https://travis-ci.org/haipdev/config)
+
 haip.config is a simple configuration handling module for Python 3.6+. You define your project configuration in yaml-files and haip.config handles the rest for you.
 
 ### Features: 
