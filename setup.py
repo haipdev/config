@@ -11,7 +11,7 @@ setuptools.setup(
     description="A simple yaml config manager.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/haipdev/haip_config",
+    url="https://github.com/haipdev/config",
     packages=setuptools.find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     classifiers=[
         "Programming Language :: Python :: 3",
