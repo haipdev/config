@@ -11,7 +11,7 @@ haip.config is a simple configuration handling module for Python 3.6+. You defin
 
 * **directory based**: place your config in multiple files in your configuration directory. haip.config will merge them automatically.
 * **environment overlay**: place your environment specific configuration in a subdirectory. haip.config will overwrite the base configuration.
-* **attribute-style**: access your config like a.b.c instead of a['b']['c']
+* **attribute-style**: access your config like a.b.c instead of a['b']['c'] (of course you can use the latter form, too)
 
 ## Getting Started
 
