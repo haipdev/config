@@ -2,7 +2,6 @@
 
 [![License](https://img.shields.io/github/license/haipdev/config.svg)](LICENSE)
 [![Build Status](https://travis-ci.org/haipdev/config.svg?branch=master)](https://travis-ci.org/haipdev/config)
-[![Activity](https://img.shields.io/github/commit-activity/y/haipdev/config.svg)]()
 [![Updates](https://pyup.io/repos/github/haipdev/config/shield.svg)](https://pyup.io/repos/github/haipdev/config)
 [![Downloads](https://img.shields.io/pypi/dm/haip_config.svg)]()
 
