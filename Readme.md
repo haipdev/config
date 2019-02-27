@@ -4,10 +4,9 @@
 [![Build Status](https://travis-ci.org/haipdev/config.svg?branch=master)](https://travis-ci.org/haipdev/config)
 [![Updates](https://pyup.io/repos/github/haipdev/config/shield.svg)](https://pyup.io/repos/github/haipdev/config/)
 
-
 haip.config is a simple configuration handling module for Python 3.6+. You define your project configuration in yaml-files and haip.config handles the rest for you.
 
-### Features: 
+## Features
 
 * **directory based**: place your config in multiple files in your configuration directory. haip.config will merge them automatically.
 * **environment overlay**: place your environment specific configuration in a subdirectory. haip.config will overwrite the base configuration.
@@ -17,33 +16,40 @@ haip.config is a simple configuration handling module for Python 3.6+. You defin
 
 ### Installing
 
-```
+```sh
 pip install haip.config
 ```
+
 or from source:
-```
+
+```sh
 git clone https://github.com/haipdev/config.git
 ```
-### Example:
 
-#### config-files:
+### Example
+
+#### config-files
 
 /path-to-my-config-dir/databases.yml
-```
+
+```yaml
 databases:
     test:
-        username: testuser        
+        username: testuser
         host: 127.0.0.2
 ```
+
 /path-to-my-config-dir/dev/databases.yml
-```
+
+```yaml
 databases:
     test:
-        password: testpassword        
+        password: testpassword
 ```
+
 #### python implementation
 
-```
+```python
 import haip.config as config
 
 config.load('/path-to-my-config-dir', 'dev')
@@ -58,7 +64,8 @@ port = cfg.databases.test.port           # <-- 3306 from default
 ## Running the tests
 
 Tests are written using pytest and located in the "tests" directory.
-```
+
+```sh
 pytest tests
 ```
 
@@ -70,11 +77,10 @@ Feel free to use and enhance this project. Pull requests are welcome.
 
 * **Reinhard Hainz** - *Initial work* - [haipdev](https://github.com/haipdev)
 
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 
-* https://github.com/hackebrot/poyo 
+* [poyo](https://github.com/hackebrot/poyo)
