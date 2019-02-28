@@ -115,7 +115,7 @@ def get(*paths, **options):
         elif value is not MANDATORY:
             result[key] = value
         else:
-            path = '/'.join(path)
+            path = '/'.join(paths)
             raise HaipConfigException(f'option "{key}" not found in section "{path}"')
     return result    
 
