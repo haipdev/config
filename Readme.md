@@ -2,7 +2,6 @@
 
 [![License](https://img.shields.io/github/license/haipdev/config.svg)](LICENSE)
 [![Build Status](https://travis-ci.org/haipdev/config.svg?branch=master)](https://travis-ci.org/haipdev/config)
-[![Updates](https://pyup.io/repos/github/haipdev/config/shield.svg)](https://pyup.io/repos/github/haipdev/config)
 
 haip.config is a simple yaml configuration handling module for Python 3.6+.
 
