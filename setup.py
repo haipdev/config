@@ -5,7 +5,7 @@ with open("Readme.md", "r") as fh:
 
 setuptools.setup(
     name="haip-config",
-    version="0.1.7",
+    version="0.1.8",
     author="Reinhard Hainz",
     author_email="reinhard.hainz@gmail.com",
     description="A simple yaml config manager.",

@@ -16,7 +16,7 @@ haip.config is a simple yaml configuration handling module for Python 3.6+.
 ### Installing
 
 ```sh
-pip install haip.config
+pip install haip-config
 ```
 
 or from source:
