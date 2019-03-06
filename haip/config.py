@@ -95,15 +95,7 @@ def get(*paths, **options):
     
     PEP 468 preserves the order of **options (therefor python 3.6+ needed)
     """
-    fullpath = []
-    cfg = _config
-    for path in paths:
-        fullpath.append(path)
-        if path in cfg:
-            cfg = cfg[path]
-        else:
-            fullpath = '.'.join(fullpath)
-            raise HaipConfigException(f'path "{fullpath}" not found in config')
+    cfg = _goto(*paths)
     # return section if no options given
     if not options:
         return cfg
@@ -117,7 +109,25 @@ def get(*paths, **options):
         else:
             path = '/'.join(paths)
             raise HaipConfigException(f'option "{key}" not found in section "{path}"')
-    return result    
+    return result
+
+def set(*paths, **options):
+    cfg = _goto(*paths)
+    if not isinstance(cfg, dict):
+        raise HaipConfigException(f'cannot set options in non-dict section')
+    cfg.update(**options)
+
+def _goto(*paths):
+    fullpath = []
+    cfg = _config
+    for path in paths:
+        fullpath.append(path)
+        if path in cfg:
+            cfg = cfg[path]
+        else:
+            fullpath = '.'.join(fullpath)
+            raise HaipConfigException(f'path "{fullpath}" not found in config')
+    return cfg
 
 def _load_dir(directory):
     """ load all *.yml files from directory """
